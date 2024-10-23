@@ -19,8 +19,8 @@ body {
 
 /* img {
     display: block;
-    width: 100%;
-} */
+    width: 100%;   
+}  */
 
 input, 
 button,
@@ -44,6 +44,7 @@ select {
     align-items: center;
     gap: 1.5em;
     color: white;
+    text-shadow: #121212;
     padding: 10em 0 0 0;
 }
 
@@ -54,7 +55,7 @@ a {
 
 .search {
     text-align: center;
-    margin-top: 3.8em;
+    margin-top: 3em;
 }
 
 .search-bar {
@@ -92,11 +93,99 @@ button:active {
 .messages {
     font-size: 1.5rem;
     color: #2E2E2F;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 9em auto 0;
+    margin: 0 auto ;
 }
 
+.movie-results {
+    border-bottom: 1px solid #4B4B4B;
+    padding: 4em 1em 1.5em 0;
+    margin-top: 1.5em;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    gap: .5em;
+}
+
+.watchlist {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: #ffff;
+   
+}
+
+
+.title {
+    color: #ffff;
+    font-size: 1.2rem;
+}
+
+.detail-container {
+    display: flex;
+    gap: .8em;
+    align-items: center;
+}
+
+.poster {
+    width: 100px;
+    height: 150px;
+}
+
+.movie-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7em;
+    color: #a5a5a5;
+    font-size: .75rem;
+}
+
+.plot {
+    width: 38ch;
+}
+
+.fa-circle-plus {
+    color: #ffff;
+    font-size: 1rem;
+}
+
+.fa-star {
+    color: gold;
+}
+
+/* @media (min-width: 780px) {
+
+    .poster {
+        width: 150px;
+        height: 270px;
+    }
+
+    .plot {
+        width: 60ch;
+    }
+
+    .movie-results {
+        width: 50%;
+    }
+
+
+
+
+} */
 

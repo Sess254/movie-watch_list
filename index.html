@@ -23,21 +23,47 @@
         <div class="search">
             <label for="movie" class="search-bar">
                 <input type="text" id="movie" placeholder="Blade Runner">
-                <button>Search</button>
+                <button id="search-btn">Search</button>
             </label>  
         </div>
 
     </header>
     <main>
-        <section class="resuts">
+        <section class="results">
+            <div class="movie-results">
+                <div class="container">
+                    <img src="./images/moviePoster.webp" class="poster">
+                    <div class="movie-text">
+                        <div class="title-container">
+                            <h1 class="title">Ambulance</h1>
+                            <i class="fa-solid fa-star"></i>
+                            <p>7.6</p>
+                        </div>
+                        <div class="detail-container">
+                            <p>116 min</p>
+                            <p>mystrey,drama,action</p>
+                            <div class="watchlist">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                <p>Watchlist</p>
+                            </div>
+                        </div>
+                        <p class="plot"> 
+                            Decorated veteran Will Sharp, desperate for money to cover his wife's medical bills, 
+                            asks for help from his adoptive brother Danny.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="messages">
                 <i class="fa-solid fa-film"></i>
                 <p>Start exploring</p>
             </div>
+            <div class="movies-results" id="movies-results"></div>
         </section>
 
     </main>
     <footer></footer>
+    <script src="./script.js"></script>
     
 </body>
 </html>
