@@ -57,7 +57,7 @@ button {
 
 .site-header {
     background-image: url('/images/pexels-geladelrosario-5504137.jpg');
-    height: 40vh;
+    height: 30vh;
     background-size: cover;
     background-position: center;
     min-width: 20em;
@@ -78,4 +78,19 @@ button {
 
 .search {
     text-align: center;
+}
+
+.message {
+    color: #2e2e2f;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7em 0;
+}
+
+.fa-film {
+    color: #2e2e2f;
+    font-size: 8rem;
 }
