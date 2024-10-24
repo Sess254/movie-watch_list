@@ -55,12 +55,17 @@ button {
     background-color: #2e2e2f;
 }
 
+button:hover,
+button:active {
+    background-color: #121212;
+}
+
 .site-header {
     background-image: url('/images/pexels-geladelrosario-5504137.jpg');
     height: 30vh;
     background-size: cover;
+    min-width: 27em;
     background-position: center;
-    min-width: 20em;
 }
 
 .header-title {
@@ -98,10 +103,11 @@ button {
 .movies {
     display: flex;
     gap: 1.5em;
-    width: 60%;
+    /* min-width: 15em; */
+    width: 40%;
     border-bottom: 2px solid #2e2e2f;
-    margin: 0 auto;
     padding: 1em 0;
+    margin: 0 auto;
 
 }
 
@@ -116,16 +122,20 @@ button {
     display: flex;
     align-items: center;
     gap: 1em;
-    color: #ffff;
+    color: #a5a5a5;
 }
 
 .fa-star {
     color: gold;
 }
 
+.fa-circle-plus {
+    font-size: 1.2rem;
+}
+
 .poster {
-    width: 150px;
-    height: 250px;
+    width: 140px;
+    height: 230px;
 }
 
 .movie-details {
@@ -137,7 +147,8 @@ button {
 
 .movie-plot {
     color: #a5a5a5;
-    width: 60ch;
+    width: 42ch;
+    font-size: 1rem;
 }
 
 .watchlist {
@@ -145,4 +156,43 @@ button {
     color: #ffff;
     align-items: center;
     gap: .3em;
+    cursor: pointer;
+}
+
+@media (max-width: 762px) {
+   .movie-details {
+    font-size: .8rem;
+   }
+
+   .movies {
+    gap: .3em;
+    margin: .5em 0;
+    width: 100%;
+   }
+
+   .poster {
+    width: 70px;
+    height: 135px;
+    }
+
+    .movie-plot {
+        font-size: .7rem;
+    }
+
+    .site-header {
+        height: 20vh;
+    }
+    .header-title {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .movies {
+        min-width: 70%;
+    }
 }
