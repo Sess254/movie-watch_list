@@ -33,7 +33,7 @@ select {
 a {
     text-decoration: none;
     color: #ffff;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 input {
@@ -64,7 +64,7 @@ button {
 }
 
 .header-title {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .header-text {
@@ -83,14 +83,66 @@ button {
 .message {
     color: #2e2e2f;
     font-size: 2rem;
-    display: flex;
+    display: none;    
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 7em 0;
+    padding: 5em 0;
 }
 
 .fa-film {
     color: #2e2e2f;
     font-size: 8rem;
+}
+
+.movies {
+    display: flex;
+    gap: 1.5em;
+    width: 60%;
+    border-bottom: 2px solid #2e2e2f;
+    margin: 0 auto;
+    padding: 1em 0;
+
+}
+
+.movie-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
+
+.movie-title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: #ffff;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.poster {
+    width: 150px;
+    height: 250px;
+}
+
+.movie-details {
+    color: #a5a5a5;
+    font-size: 1rem;
+    display: flex;
+    gap: 1em;
+}
+
+.movie-plot {
+    color: #a5a5a5;
+    width: 60ch;
+}
+
+.watchlist {
+    display: flex;
+    color: #ffff;
+    align-items: center;
+    gap: .3em;
 }
