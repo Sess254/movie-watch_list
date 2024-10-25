@@ -100,10 +100,14 @@ button:active {
     font-size: 8rem;
 }
 
+.results {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .movies {
     display: flex;
     gap: 1.5em;
-    /* min-width: 15em; */
     width: 40%;
     border-bottom: 2px solid #2e2e2f;
     padding: 1em 0;
