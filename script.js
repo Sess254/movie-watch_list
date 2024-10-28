@@ -40,6 +40,7 @@ async function getMovie(){
                     <p>${data.Genre}</p>
                     <div class="watchlist" id="add-movie">
                         <i class="fa-solid fa-circle-plus" data-add="${data.imdbID}"></i>
+                        <p>Watchlist</p>
                     </div>
                 </div>
                 <div class="movie-plot">

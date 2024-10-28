@@ -33,7 +33,7 @@ select {
 a {
     text-decoration: none;
     color: #ffff;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 input {
@@ -62,14 +62,22 @@ button:active {
 
 .site-header {
     background-image: url('/images/pexels-geladelrosario-5504137.jpg');
-    height: 30vh;
+    height: 35vh;
     background-size: cover;
     background-position: center;
-    min-width: 27em;
+    min-width: 40em;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11em;
+    padding-top: 3em;
 }
 
 .header-title {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .header-text {
@@ -109,7 +117,7 @@ button:active {
     display: flex;
     gap: 1.5em;
     width: 30%;
-    padding: 1em 0;
+    padding: 3em 0 0;
     margin: 0 auto;
 
 }
@@ -166,7 +174,7 @@ button:active {
 
 @media (max-width: 1000px) {
     .movies {
-        min-width: 70%;
+        min-width: 90%;
     }
 
    
