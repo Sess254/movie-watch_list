@@ -9,7 +9,7 @@ let watchList = []
 let movieArray = []
 
 
-watchList = JSON.parse(localStorage.getItem('watchList'))
+
 
 function render() {
     watchListEl.innerHTML = getWacthList()
@@ -32,9 +32,8 @@ searchBtn.addEventListener('click', getMovie)
 
 async function getMovie(){
     const movieSelection = movieInput.value
-    const res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=33ae5430&t=${movieSelection}`)
+    const res = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=33ae5430&t=${movieSelection}`)
     const data = await res.json()
-    // console.log(data)
 
     if (data.Response === 'True'){
         resultsEl.innerHTML += `
@@ -82,7 +81,7 @@ async function getMovie(){
 }
 
 function addMovies(movieId) {
-   
+    watchList = JSON.parse(localStorage.getItem('watchList'))
     const targetObj = movieArray.find(movie =>{
         return movie.id === movieId
     })
@@ -143,9 +142,6 @@ function removeMovie(movieId) {
         render()   
     }
 }
-
-
-
 render()
 
 
