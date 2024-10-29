@@ -8,21 +8,19 @@ const watchListEl = document.getElementById('watchlist-el')
 let watchList = []
 let movieArray = []
 
+
+watchList = JSON.parse(localStorage.getItem('watchList'))
+
 function render() {
     watchListEl.innerHTML = getWacthList()
-}
-
-if (watchList.length > 0) {
-    messageEl.style.display = "none"
+   
 }
 
 
 
 document.addEventListener('click', (e) => {
     if (e.target.dataset.add){
-        addMovies(e.target.dataset.add)
-       
-       
+        addMovies(e.target.dataset.add)   
     } else if (e.target.dataset.remove) {
         removeMovie(e.target.dataset.remove)
     }
@@ -76,7 +74,6 @@ async function getMovie(){
             runtime: data.Runtime,
         }
     )
-    console.log(movieArray)
     if (movieArray.length > 0) {
         messageEl.style.display = "none"
     }
@@ -85,17 +82,15 @@ async function getMovie(){
 }
 
 function addMovies(movieId) {
+   
     const targetObj = movieArray.find(movie =>{
         return movie.id === movieId
     })
-
-    watchList = JSON.parse(localStorage.getItem('watchList'))
 
     if (!watchList.includes(targetObj)) {
         watchList.push(targetObj)
         localStorage.setItem('watchList', JSON.stringify(watchList))
         alert('Added to watchlist')
-        console.log(watchList)
     } else {
         alert('movie already in watchlist')
     }
@@ -132,6 +127,7 @@ function getWacthList() {
        `  
     })
     return watchListHtml
+   
 
 }
 
@@ -144,11 +140,11 @@ function removeMovie(movieId) {
         watchList.splice(index, 1)
         localStorage.setItem('watchList', JSON.stringify(watchList))
         alert('movie removed')
-        render()
-        
+        render()   
     }
-
 }
+
+
 
 render()
 
