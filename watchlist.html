@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>watchlist</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,10 @@
     <header class="site-header">
         <div class="header-container">
             <div class="header-text">
-                <h1 class="header-title">Find your film</h1>
-                <a href="./watchlist.html">My Watchlist</a>
+                <h1 class="header-title">My Watchlist</h1>
+                <a href="./index.html">Search for movies</a>
             </div>
-            <div class="search">
+            <div class="search-hide">
                 <label for="movie" class="search-bar">
                     <input type="text" id="movie" placeholder="Blade Runner">
                     <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -30,13 +30,18 @@
         </div>
     </header>
     <main>
-        <section class="results" id="results-el">
+        <section class="results" id="watchlist-el">
         </section>
 
         <section class="messages">
-            <div class="message" id="message-el">
-                <i class="fa-solid fa-film"></i>
-                <p>Start exploring</p>      
+            <div class="message" id="message">
+                <p>Your watchlist looking a little empty...</p>
+                <div class="add-some">
+                    <i class="fa-solid fa-circle-plus"></i> 
+                    <a href="./index.html" class="link">Lets add some movies!</a>
+                </div>   
+               
+
             </div>
         </section>
     </main>

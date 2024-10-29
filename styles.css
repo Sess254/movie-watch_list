@@ -96,7 +96,7 @@ button:active {
 .message {
     color: #2e2e2f;
     font-size: 2rem;
-    display: none;    
+    display: flex;    
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -168,6 +168,24 @@ button:active {
     align-items: center;
     gap: .3em;
     cursor: pointer;
+}
+
+.add-some {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    color: white;
+    gap: .3em;
+}
+
+
+.link {
+    font-size: 1.2rem;
+}
+
+
+.search-hide {
+    display: none;
 }
 
 
