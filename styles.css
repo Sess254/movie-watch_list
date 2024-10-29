@@ -29,3 +29,79 @@ select {
     font: inherit;
     font-size: 100%;
 }
+
+
+/* find your film section */
+
+.site-header {
+    background-image: url('./images/pexels-geladelrosario-5504137.jpg');
+    background-size: cover;
+    background-position: center; 
+    height: 30vh;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text {
+    display: flex;
+    padding: 7em 0 0 1em;
+    align-items: center;
+    color: #ffff;
+    gap: 4em;
+    text-shadow: 2px 2px 4px black;
+}
+
+.heading {
+    font-size: 1.8rem;
+}
+
+.header-tag {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.input {
+    width: 100%;
+    text-align: center;
+    padding-top: 6em;
+}
+
+input,
+.search-btn {
+    padding: .2em 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    color: #9CA3AF;
+    background-color: #2E2E2F;
+}
+
+.search-btn {
+    color: #fff;
+    background-color: #4b4b4b;
+    font-weight: 700;
+
+}
+
+.search-btn:hover{
+    background-color: #6B7280;
+}
+
+.fa-film {
+    font-size: 3.625rem;
+}
+
+.message-section {
+    color: #4b4b4b;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10em auto;
+}
