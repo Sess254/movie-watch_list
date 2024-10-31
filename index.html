@@ -16,20 +16,53 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="header-container">
-            <div class="header-text">
+        <div class="row">
+            <div class="header-text container">
                 <h1 class="heading">Find your film</h1>
                 <a href="" class="header-tag">My watchlist</a>
             </div>
-           <div class="input">
-                <label for="search"></label>
-                <input type="text" name="" id="search" placeholder="Salt"><button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-           </div>
         </div>
+        <div class="input container">
+            <form id="search"></form>
+            <label for="search"></label>
+                <input type="text" 
+                    name="" 
+                    id="search" 
+                    placeholder="Salt"
+                    ><button class="search-btn" type="submit">   Search</button>
+           </div>
     </header>
     <main>
-        <section class="message-section">
-            <div id="message-el" class="message">
+        <section class="results">
+            <div class="container movie">
+                <div class="film-container">
+                    <img src="./images/moviePoster.webp" alt="movie poster" class="poster">
+                    <div class="row">
+                        <div class="movie-title-rating movie-container">
+                            <h2 class="movie-title">Ambulance</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <p class="rating">7.8</p>
+                        </div>
+                        <div class="movie-details movie-container">
+                            <p>116 min</p>
+                            <p>action, drama</p>
+                            <div class="watchlist-btn">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                <p>watchlist</p>
+                            </div>
+                        </div>
+                        <p class="plot">
+                            Decorated veteran Will Sharp, desperate for money to cover his wife's medical bills, 
+                            asks for help from his adoptive brother Danny.
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-section" id="message-el">
+            <div id="message" class="message">
                 <i class="fa-solid fa-film"></i>
                 <p>Start exploring</p>
 

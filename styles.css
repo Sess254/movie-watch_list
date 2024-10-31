@@ -1,3 +1,5 @@
+
+
 *,
 *::before,
 *::after {
@@ -40,18 +42,18 @@ select {
     height: 30vh;
 }
 
-.header-container {
+.row {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
 .header-text {
-    display: flex;
-    padding: 7em 0 0 1em;
     align-items: center;
     color: #ffff;
-    gap: 4em;
     text-shadow: 2px 2px 4px black;
+    justify-content: space-between;
+    padding-top: 7em;
 }
 
 .heading {
@@ -63,31 +65,41 @@ select {
     color: white;
     font-size: 1rem;
     cursor: pointer;
+    margin-left: 2em;
 
 }
 
 .input {
-    width: 100%;
-    text-align: center;
-    padding-top: 6em;
-}
-
-input,
-.search-btn {
-    padding: .2em 1em;
-    border-radius: 5px;
-    border: none;
+   padding-top: 7em; 
 }
 
 input {
-    color: #9CA3AF;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: .5em 1em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+ 
+}
+
+input {
+    color: #282a2e;
     background-color: #2E2E2F;
 }
 
 .search-btn {
     color: #fff;
     background-color: #4b4b4b;
-    font-weight: 700;
+    font-weight: 300;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    margin: 0;
+    padding: .5em  1em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 
@@ -100,8 +112,68 @@ input {
 }
 
 .message-section {
+    display: none;
     color: #4b4b4b;
     text-align: center;
     font-size: 1.3rem;
-    margin: 10em auto;
+    margin: auto;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-width: 580px;
+
+}
+
+.poster {
+    height: 200px;
+    width: 130px;
+}
+
+.movie {
+    padding: 2em 0 .3em; 
+}
+
+.movie-title-rating {
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.movie-details, 
+.rating {
+    color: white;
+    font-size: 1rem;
+}
+
+.fa-star {
+    color: gold;
+    font-size: 1rem;
+}
+
+.movie-container {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.film-container {
+    display: flex;
+    gap: 1.5em;
+    color: #a5a5a5;
+
+}
+
+.watchlist-btn {
+    display: flex;
+    align-items: center;
+    gap: .1em;
+}
+
+.plot{
+    width: 40ch;
 }
