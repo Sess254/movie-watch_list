@@ -40,6 +40,7 @@ select {
     background-size: cover;
     background-position: center; 
     height: 30vh;
+    min-width: 700px;
 }
 
 .row {
@@ -191,6 +192,10 @@ input {
 @media (max-width: 750px) {
    .header-text {
     justify-content: center;
+   }
+
+   .input {
+    max-width: 450px;
    }
 
 }
