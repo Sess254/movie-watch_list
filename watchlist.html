@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>watchlist</title>
+    <title>search</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,25 +16,36 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="header-container">
-            <div class="header-text">
-                <h1 class="header-title">My Watchlist</h1>
-                <a href="./index.html" target="_blank">Search for movies</a>
+        <div class="row">
+            <div class="header-text container">
+                <h1 class="heading">Find your film</h1>
+                <a href="./index.html" class="header-tag">Search for movies</a>
             </div>
-            <div class="search-hide">
-                <label for="movie" class="search-bar">
-                    <input type="text" id="movie" placeholder="Blade Runner">
-                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </label>  
-            </div>
+        </div>
+        <div class="input container hide">
+            <label for="search"></label>
+                <input type="text" 
+                    name="" 
+                    id="search" 
+                    placeholder="Salt"
+                    ><button class="search-btn" type="submit" id="search-btn">Search</button>
         </div>
     </header>
     <main>
         <section class="results" id="watchlist-el">
         </section>
+
+        <section class="message-section" id="message-el">
+            <div id="message" class="message">
+                <i class="fa-solid fa-film"></i>
+                <p>Start exploring</p>
+
+
+            </div>  
+        </section>
     </main>
     <footer></footer>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
     
 </body>
 </html>

@@ -85,7 +85,7 @@ input {
 }
 
 input {
-    color: #282a2e;
+    color: #a5a5a5;
     background-color: #2E2E2F;
 }
 
@@ -135,7 +135,7 @@ input {
 }
 
 .movie {
-    padding: 2em 0 .3em; 
+    padding: 3em 0 .3em; 
 }
 
 .movie-title-rating {
@@ -172,8 +172,18 @@ input {
     display: flex;
     align-items: center;
     gap: .1em;
+    cursor: pointer;
 }
 
 .plot{
     width: 40ch;
+}
+
+.results {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hide {
+    display: none;
 }

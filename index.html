@@ -19,46 +19,20 @@
         <div class="row">
             <div class="header-text container">
                 <h1 class="heading">Find your film</h1>
-                <a href="" class="header-tag">My watchlist</a>
+                <a href="./watchlist.html" class="header-tag">My watchlist</a>
             </div>
         </div>
         <div class="input container">
-            <form id="search"></form>
             <label for="search"></label>
                 <input type="text" 
                     name="" 
                     id="search" 
                     placeholder="Salt"
-                    ><button class="search-btn" type="submit">   Search</button>
-           </div>
+                    ><button class="search-btn" type="submit" id="search-btn">Search</button>
+        </div>
     </header>
     <main>
-        <section class="results">
-            <div class="container movie">
-                <div class="film-container">
-                    <img src="./images/moviePoster.webp" alt="movie poster" class="poster">
-                    <div class="row">
-                        <div class="movie-title-rating movie-container">
-                            <h2 class="movie-title">Ambulance</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="rating">7.8</p>
-                        </div>
-                        <div class="movie-details movie-container">
-                            <p>116 min</p>
-                            <p>action, drama</p>
-                            <div class="watchlist-btn">
-                                <i class="fa-solid fa-circle-plus"></i>
-                                <p>watchlist</p>
-                            </div>
-                        </div>
-                        <p class="plot">
-                            Decorated veteran Will Sharp, desperate for money to cover his wife's medical bills, 
-                            asks for help from his adoptive brother Danny.
-                        </p>
-                    
-                    </div>
-                </div>
-            </div>
+        <section class="results" id="results-el">
         </section>
 
         <section class="message-section" id="message-el">
@@ -71,7 +45,7 @@
         </section>
     </main>
     <footer></footer>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
     
 </body>
 </html>
