@@ -2,9 +2,6 @@ const searchInput = document.getElementById('search')
 const searchBtn = document.getElementById('search-btn')
 const resultsEl = document.getElementById('results-el')
 const watchlistEl = document.getElementById('watchlist-el')
-
-// let watchList = []
-
    
 
 document.addEventListener('click', e => {
@@ -75,9 +72,7 @@ function addFilmTowatchlist(filmTitle) {
 
 function loadWatchlist() {
     const watchList = JSON.parse(localStorage.getItem('watchList'))
-
     watchlistEl.innerHTML = ''
-
     watchList.forEach(filmTitle =>{
         fetchFilmData(filmTitle)
             .then(filmData => {
@@ -124,13 +119,9 @@ async function fetchFilmData(filmTitle) {
 
 function removeFromWatchlist(filmTitle) {
     const watchList = JSON.parse(localStorage.getItem('watchList'))
-
     const updatedWatchlist = watchList.filter(title => title != filmTitle)
     localStorage.setItem('watchList', JSON.stringify(updatedWatchlist))
-
     loadWatchlist()
-
-
 }
 
 function clearInputField() {

@@ -125,7 +125,7 @@ input {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-    min-width: 580px;
+    min-width: 680px;
 
 }
 
@@ -186,4 +186,11 @@ input {
 
 .hide {
     display: none;
+}
+
+@media (max-width: 750px) {
+   .header-text {
+    justify-content: center;
+   }
+
 }
