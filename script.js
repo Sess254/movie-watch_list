@@ -34,9 +34,9 @@ async function searchForFilm(){
                         <div class="movie-details movie-container">
                             <p>${data.Runtime} </p>
                             <p>${data.Genre}</p>
-                            <div class="watchlist-btn">
-                                <i class="fa-solid fa-circle-plus" data-add="${data.Title}"></i>
-                                <p>watchlist</p>
+                            <div class="watchlist-btn" >
+                                <i class="fa-solid fa-bookmark" data-add="${data.Title}"></i>
+                                <p>Add</p>
                             </div>
                         </div>
                         <p class="plot">${data.Plot}</p>
@@ -62,10 +62,10 @@ function addFilmTowatchlist(filmTitle) {
     if (!watchList.includes(filmTitle)){
         watchList.push(filmTitle)
         localStorage.setItem('watchList', JSON.stringify(watchList))
-        alert('Movie added to wathlist')
+        alert(`${filmTitle} added to watchlist`)
 
     } else {
-        alert(`Movie already in watchlist`)
+        alert(`${filmTitle} already in watchlist`)
     }
     
 }
@@ -91,7 +91,7 @@ function loadWatchlist() {
                             <p>${filmData.Genre}</p>
                             <div class="watchlist-btn">
                                 <i class="fa-solid fa-circle-minus" data-remove="${filmData.Title}"></i>
-                                <p>watchlist</p>
+                                <p>Remove</p>
                             </div>
                         </div>
                         <p class="plot">${filmData.Plot}</p>
@@ -121,6 +121,7 @@ function removeFromWatchlist(filmTitle) {
     const watchList = JSON.parse(localStorage.getItem('watchList'))
     const updatedWatchlist = watchList.filter(title => title != filmTitle)
     localStorage.setItem('watchList', JSON.stringify(updatedWatchlist))
+    alert(`${filmTitle} removed from watchlist`)
     loadWatchlist()
 }
 
